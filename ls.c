@@ -10,14 +10,14 @@
 #include <stdlib.h>
 
 
-int main(int argc, const char** argv, const char** envp) //
+int main(int argc, const char** argv, const char** envp) // где argc - количество принимамыемых аргументов, argv - 
 {
-	DIR* dir;
-	struct dirent* curr_file_info;
-	struct stat sb;
-	char* full_path = NULL;
+	DIR* dir;					//dfefd
+	struct dirent* curr_file_info;			
+	struct stat sb;					//fgfdg
+	char* full_path = NULL;				//создаем переменную строковую под путь к файлу	- пустую
 	struct passwd  *pw_d;
-	if(argc < 2)
+	if(argc < 2)					//если argс меньше 2 то не задан файл, свойства которого нужно описать - выдаем ошибку
 	{
 		printf("No arguments supplied\n");
 		return -1;
